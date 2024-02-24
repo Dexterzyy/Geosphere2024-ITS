@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoOlympic | SIC</title>
+    <link rel="icon" href="/images/LOGO G.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/mahasiswa.css">
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+
+    <main>
+      <nav class=" navbar navbar-light navigasi">
+        <div class="logo">
+          <h3 class="fw-bolder">GeoOlympic</h3>
+        </div>
+        <div class="burger-menu">
+          <div class="burger-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="links">
+          <a class="link" href="/views/landing.html">Home</a>
+          <a class="link" href="/views/pengumpulan.html">Submission</a>
+          <a class="link" href="">Guidebook</a>
+          <a class="link" href="#timeline">Timeline</a>
+        </div>
+      </nav>
+
+      <div class=" main-logo">
+        <div class="grid-2">
+          <h1><span>S</span>eismic <span>I</span>nterpretation <span>C</span>ompetition</h1>
+          <h3 class="text-primary">"Beyond Boundaries: Seismic Exploration, Limitless Discoveries!"</h3>
+          <p class="welcome">Welcome to the exhilarating Geoolympic: Seismic Interpretation competition, where seismic exploration meets the art of data interpretation!
+          </p>
+          <p class="text-info fw-bolder fs-4 text-decoration-underline">Guidebook dan Registrasi SIC</p>
+          <div class="grid-child">
+            <button class="btn btn-primary p-2 fs-5" id="guidebook">Guidebook</button>
+            <button onclick="redirect('regis_maha')" class="btn btn-success p-2 fs-5" id="">Registrasi</button>
+          </div>
+        </div>
+        <div class="grid-1">
+          <img src="/images/LOGO G.png" alt="" class="img-fluid logo-seismic">
+        </div>
+      </div>
+
+      <div class="what_is">
+        <div class="what_is_child">
+          <h2 class="fw-bolder text-info">🔎 What is ?</h2>
+          <p>Geoolympic: Seismic Interpretation is a thrilling journey into the world of geophysics, specifically <span>focusing on seismic data processing</span>. Teams will be presented with real-world seismic datasets, and participants will utilize their expertise to analyze and interpret this valuable information to unlock the Earth's geological secrets.</p>
+
+          <h2 class="fw-bolder text-info">🤝 Team-Based Competition</h2>
+          <p>To foster collaboration and teamwork, the competition is structured with a team-based approach. <span>Each team must consist of 3 members</span>. Together, you will synergize your skills and knowledge to tackle the seismic challenges and vie for the coveted title of Geoolympic champions!</p>
+
+          <h2 class="fw-bolder text-info">💼 Confidentiality of Data</h2>
+          <p>We prioritize the utmost security and confidentiality of the data involved in the competition. Rest assured that all information shared and data provided during the Geoolympic: Seismic Interpretation <span>will be handled with the utmost care and kept strictly confidential</span>.</p>
+        </div>
+      </div>
+
+      <div class="timeline" id="timeline">
+          <div>
+            <h2 class="fw-bolder text-center" id="head-timeline">TIMELINE</h2>
+            <p class="text-center text-white">For more details, please refer to the guidebook</p>
+          </div>
+          <div class="timeline-child">
+            <h2 class="fw-bolder"><span><img src="/images/regis.png" alt=""></span> Registrasi</h2>
+            <ul>
+
+              <li>Batch 1 : 15 Juli - 22 Juli 2024</li>
+
+              <li>Batch 2 : 23 Juli - 4 Agustus 2024</li>
+
+              <li>Batch 3 : 5 Agustus - 11 Agustus 2024</li>
+
+            </ul>
+
+            <h2 class="fw-bolder"><span><img src="/images/fight.png" alt=""></span> Preliminary</h2>
+            <ul>
+              
+              <li>Case Release : 11 Agustus 2024</li>
+
+              <li class="text-danger fw-bolder" >Abstract Submission : 25 Agustus 2024</li>
+
+              <li>Final Pass Announcement : 1 September 2024</li>
+
+            </ul>
+
+            <h2 class="fw-bolder"><span><img src="/images/presentation.png" alt=""></span> Final Presentation</h2>
+            <ul>
+              
+              <li>Power Point Submission : 29 September 2024</li>
+
+              <li>Technical Meeting : 4 Oktober 2024</li>
+
+              <li class="text-danger fw-bolder">Final Presentation : 6 Oktober 2024</li>
+
+            </ul>
+          </div>
+      </div>
+        
+
+      <div class="requirement">
+
+        <div>
+          <h2 class="fw-bolder text-center text-info">REQUIREMENT</h2>
+          <p class="text-center text-white">For more details, please refer to the guidebook</p>
+        </div>
+
+        <div>
+          <h4 class="text-start text-light">The participants of SIC 2024 must fulfill the requirements below :</h4>
+
+          <ul>
+            <li>Participants are university / equivalent level students in Indonesia as evidenced by a student card.</li>
+            <li>Participants are in the form of a team consisting of 3 people (maximum) and come from the same university.</li>
+            <li>Participants can register SI through .... according to the date that has been set.</li>
+            <li>Participants are required to complete registration and registration fees set by the committee.</li>
+            <li>There are 2 stages in the Seismic Interpretation Competition: Preliminary and Final Presentation.</li>
+            <li>Only 5 teams will qualify for the final round.</li>
+            <li>Document submission and presentation using Indonesian language</li>
+            <li>Plagiarism will be disqualified</li>
+          </ul>
+        </div> 
+      </div>
+
+      <div class="facilities">
+        <div >
+          <h2 class="fw-bolder text-start" id="head-facilities">FACILITIES</h2>
+        </div>
+
+        
+        <div id="facilities-1">
+          <ul>
+            <li> 
+              <img width="100" height="100" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-lodging-hospitality-services-flaticons-lineal-color-flat-icons-2.png" alt="external-lodging-hospitality-services-flaticons-lineal-color-flat-icons-2"/>
+              <span id="facil">Homestay</span>
+            </li>
+
+            <li>
+              <img width="100" height="100" src="https://img.icons8.com/fluency/48/bus.png" alt="bus"/>
+              <span id="facil">Transportation</span>
+            </li>
+
+            <li>
+              <img width="100" height="100" src="https://img.icons8.com/fluency/48/lunch.png" alt="lunch"/>
+              <span id="facil">Food</span>
+            </li>
+
+            <li>
+              <img width="100" height="100" src="https://img.icons8.com/fluency/96/confetti--v1.png" alt="confetti--v1"/>
+              <span id="facil">Gala Dinner</span>
+            </li>
+
+            <li>
+              <img width="100" height="100" src="https://img.icons8.com/external-ddara-lineal-color-ddara/64/external-department-business-elements-ddara-lineal-color-ddara.png" alt="external-department-business-elements-ddara-lineal-color-ddara"/>
+              <span id="facil">Tour Department</span>
+            </li>
+
+            <li>
+              <img width="100" height="100" src="https://img.icons8.com/fluency/96/contract.png" alt="contract"/>
+              <span id="facil">Sertificate</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hadiah">
+
+        <div class="logo-prize">
+          <img src="/images/gears.png" alt="">
+        </div>
+
+        <div class="prize">
+          <p class="">REWARD SIC 2024</p>
+
+          <ul>
+            <li>1st place : Rp 3.000.000</li>
+            <li>2nd place : Rp 2.500.000</li>
+            <li>3rd place : Rp 1.500.000</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="container-fluid">
+      <!-- place footer here -->
+        <div class="row">
+          <div class="col justify-content-center text-center">
+            <img src="/images/LOGO G.png" alt="" class="mx-auto">
+          </div>
+          <div class="col text-center contact">
+            <h4 class="text-warning"><strong>YURCEL SATRIA ZAHRAN</strong></h4>
+            <i class="text-white">Project Officer of Geosphere 2024</i>
+            <div class="phone">
+              <img src="/images/WhatsApp.png" alt="" class="d-md-block d-none" style="height: 30px; width: 30px">
+              <p class="text-light">(+62) 897-8455-490</p>
+            </div>
+
+            <br>
+            <br>
+
+            <h4 class="text-warning"><strong>M GHATFAN AUFA</strong></h4>
+            <i class="text-white">Head of Coordinator of GeoOlympic 2024</i>
+            <div class="phone">
+              <img src="/images/WhatsApp.png" alt="" class="d-md-block d-none" style="height: 30px; width: 30px">
+              <p class="text-light">(+62) 858-9589-2863</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center">
+        <p class="text-uppercase text-warning">Himpunan Mahasiswa Teknik Geofisika (HMTG)</p>
+      </div>
+      <div class="container text-end">
+        <p class="text-light fw-bolder text-decoration-underline">Developed by UlinNuha 2024</p>
+      </div>
+    </footer>
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="/script/mahasiswa.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+
+</body>
+</html>

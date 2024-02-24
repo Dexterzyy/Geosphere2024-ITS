@@ -1,0 +1,233 @@
+/* Body */
+body {
+    background: #611919;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+}
+
+/* Navbar */
+
+.navigasi {
+    background: transparent;
+    transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+    z-index: 1000;
+}
+
+.unduh {
+	color: whitesmoke;
+	font-size: 1rem;
+}
+
+.daftar button {
+    color: white;
+    background: #DD1307;
+}
+
+.daftar button:hover {
+    color: blue;
+    background: white;
+}
+
+.registrasi:hover {
+    color: black;
+    background: white;
+}
+
+#downloadButton1, #downloadButton2 {
+	color: black;
+	background: white;
+
+}
+
+#downloadButton1:hover, #downloadButton2:hover {
+	color: white;
+	background: #DD1307;
+}
+
+.navigasi a{
+    color: transparent;
+    background: #DD1307;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.nav-core-1 a {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.nav-core-1 a:hover {
+    color: white;
+    background: #DD1307;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+nav .nav-logo {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav-core-1 {
+    padding-left: 200px;   
+}
+
+.nav-1 a {
+    margin: 0px 10px;
+    font-size: 1.2rem;
+}
+.nav-core-2 {
+    padding-left: 230px;
+}
+
+/* Main Section */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.main-logo img {
+    padding-top: 10px;
+    width: 500px;
+}
+
+.describe {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.describe span {
+    color: #DD1307;
+    font-size: 250%;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 576px) {
+    .container .row {
+        display: grid;
+        
+    }
+
+    .nav-core-1 {
+    padding-left: 0;
+    }
+    
+    .nav-1 a {
+	margin: 0px 5px;
+    font-size: 1rem;
+    }
+
+    .nav-core-2 {
+    display: flex;
+    padding-left: 0;
+    }
+
+    .main-logo img {
+		width: 100%;
+	}
+
+    .describe {
+        font-size: small;
+    }
+
+    .describe span {
+        font-size: 180%;
+    }
+
+    .daftar button {
+        color: white;
+        background: blue;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 767px) {
+    body {
+        height: 100dvh;
+    }
+
+    nav .nav-logo {
+    font-size: 1.2rem;
+    }
+
+    .nav-core-1 {
+    padding-left: 0;
+    }
+    
+    .nav-1 a {
+	margin: 0px 5px;
+    font-size: 1rem;
+    }
+
+    .nav-core-2 {
+    display: flex;
+    padding-left: 0;
+    }
+    .nav-2 {
+        flex-direction: column;
+    }
+
+    .main-logo img {
+		width: 100%;
+	}
+
+	/* .main-describe {
+		width: 100%;
+	} */
+	.describe {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    nav .nav-logo {
+    font-size: 2rem;
+    }
+
+    .nav-core-1 {
+        padding-left: 0;
+    }
+    .nav-core-2 {
+        display: flex;
+        padding-left: 0;
+    }
+    .nav-2 {
+        flex-direction: column;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .main-logo img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        height: 100dvh;
+    }
+
+    .nav-core-1 {
+        padding-left: 100px;
+    }
+    .nav-core-2 {
+        display: flex;
+        padding-left: 0;
+    }
+    .nav-2 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
