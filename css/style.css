@@ -33,6 +33,20 @@ body {
     display: flex;
 }
 
+.link {
+    font-size: 2rem;
+}
+
+.link:hover {
+    color: #FFC020;
+}
+
+.link:active {
+    text-decoration: underline;
+    text-decoration-color: white;
+    -moz-text-decoration-color: white;
+}
+
 .login {
     display: flex;
     justify-content: center;
@@ -79,7 +93,12 @@ div .logo {
 
 
 .name-event {
+    color: #FFC020;
     font-size: 5em;
+}
+
+.surname, .visi {
+    color: #ffffff;
 }
 
 .describe2 {
@@ -93,21 +112,49 @@ div .logo {
 
 
 .judul {
-    color: transparent;
-    background: #FE4E11;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: #000000;
     font-size: 3em;
+    text-shadow: 10px 1px 20px black;
+}
+
+#competition, #non-competition {
+    /* background: #f7f7f7; */
+    background: #dbb4b4;
+}
+
+#competition {
+    border-radius: 1% 1% 0 0;
+    -webkit-border-radius: 1% 1% 0 0;
+    -moz-border-radius: 1% 1% 0 0;
+    -ms-border-radius: 1% 1% 0 0;
+    -o-border-radius: 1% 1% 0 0;
 }
 
 .bglogo1 {
+    box-shadow: 20px 10px 20px black;
+    background: #8E2735;
     padding: 5em;
     width: 20rem;
 }
 
 .bglogo2 {
+    box-shadow: 20px 10px 20px black;
+    background: #8E2735;
     padding: 5em;
     width: 13rem;
+}
+
+.bglogo1:hover, .bglogo2:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
 }
 
 .bglogo {
@@ -121,16 +168,18 @@ div .logo {
 }
 
 .contact {
-    padding: 10px 0;
+    box-sizing: border-box;
+    margin: 0 100px;
+    padding: 10px 100px;
     display: flex;
-    border-radius: 5%;
+    border-radius: 50px;
     justify-content: center;
     align-items: center;
     background: #8E2735;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .phone {
